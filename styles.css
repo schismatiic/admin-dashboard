@@ -21,6 +21,16 @@ div {
 .sidebar {
   grid-column: 1 / 2;
 }
+.sidebar__logo {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-style: italic;
+  margin: 10px;
+}
+.sidebar__logo img {
+  margin-right: 8px;
+}
 
 /* ==================== Header ==================== */
 
