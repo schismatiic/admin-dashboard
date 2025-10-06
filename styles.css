@@ -2,4 +2,40 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+
+body {
+  background-color: rgb(14, 14, 14);
+}
+div {
+  color: #fff;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+/* ==================== Sidebar ==================== */
+
+.sidebar {
+  grid-column: 1 / 2;
+}
+
+/* ==================== Header ==================== */
+
+.header {
+  grid-column: 2 / 3;
+}
+
+/* ==================== Main ==================== */
+
+.main {
+  grid-column: 2 / 3;
+}
+
+/* ==================== Combined sections ==================== */
+.header,
+.main {
+  background-color: rgb(34, 34, 34);
 }
