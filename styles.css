@@ -1,3 +1,7 @@
+:root {
+  --sidebar: rgb(8, 8, 8);
+  --right-section: rgb(34, 34, 34);
+}
 * {
   margin: 0;
   padding: 0;
@@ -6,10 +10,10 @@
 }
 
 body {
-  background-color: rgb(14, 14, 14);
+  background-color: var(--sidebar);
 }
 div {
-  color: #fff;
+  color: #cecece;
 }
 
 .container {
@@ -24,14 +28,41 @@ div {
 .sidebar__logo {
   display: flex;
   justify-content: left;
+  font-size: 1.3rem;
   align-items: center;
   font-style: italic;
   margin: 10px;
+  margin-bottom: 50px;
+  padding: 20px;
+  border-bottom: 1px solid var(--right-section);
+  cursor: pointer;
 }
 .sidebar__logo img {
   margin-right: 8px;
 }
-
+.sidebar__top {
+  margin-bottom: 30px;
+}
+.sidebar__top svg,
+.sidebar__bottom svg {
+  fill: #cecece;
+  width: 24px;
+  margin-right: 18px;
+}
+.sidebar__li {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin: 4px;
+  padding: 10px;
+  cursor: pointer;
+}
+.sidebar__li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.sidebar__li p {
+  font-size: 1.1rem;
+}
 /* ==================== Header ==================== */
 
 .header {
@@ -47,5 +78,5 @@ div {
 /* ==================== Combined sections ==================== */
 .header,
 .main {
-  background-color: rgb(34, 34, 34);
+  background-color: var(--right-section);
 }
